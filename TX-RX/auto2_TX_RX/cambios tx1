@@ -1,0 +1,14 @@
+  int tam_trama, conretx;
+  frame trama_recb;
+  
+ tam_trama = from_physical_layer(&trama_recb, argu->fde);  
+				  printf("control : %c \n", trama_recb.control);
+
+
+printf("Recibido Nack\n");
+                                     if (conretx == argu->n_rtx) {
+                                           automat_transit(argu->active_en, automata, NACK, argu);
+                                           printf("ERROR en el canal \n");
+                                           exit(-1);
+                                          
+                                          }

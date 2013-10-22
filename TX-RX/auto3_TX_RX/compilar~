@@ -1,0 +1,18 @@
+cd /media/sdb1/teleinformatica/Practica2
+
+gcc -I./ IFTI_P2_automat.c tx2_3.c -o tx3
+
+ejecutar 
+ ./tx2 10 20 uno.txt 2 3
+
+gcc -I./ IFTI_P2_automat.c rx2_3.c -o rx3
+
+ ./rx3 dos.txt
+
+ ./rx3 dos.txt 0 50  50 automatico
+ 
+./rx3 dos.txt 1 50  50  manual
+ 
+ 
+strace (strace y el nombre del programa que quer� ejecutar
+a continuaci�), que te muestra por pantalla lo que va haciendo el mismo.
